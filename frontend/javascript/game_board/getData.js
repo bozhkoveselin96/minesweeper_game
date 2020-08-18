@@ -21,14 +21,14 @@ function _makeRequest(level) {
             const board = JSON.parse(this.response);
             let mines;
             _createBoardInHTML(board);
-            mines = _showBombsInThisLevel(level);
+            mines = _showMinesInThisLevel(level);
             document.getElementById('board').className = '';
             document.getElementById('level-buttons').className = 'hidden';
             document.getElementById('flag-mine').className = 'flex';
             document.getElementById('new-game').className = '';
             document.getElementById('num-mines').innerHTML = mines;
             let mines_value = document.getElementById('num-mines');
-            _changeNumberBombsColor(mines_value.innerHTML);
+            _changeNumberMinesColor(mines_value.innerHTML);
         }
     };
     xmlhttp.open("POST", "http://localhost/minesweeper_game/backend/index.php", true);

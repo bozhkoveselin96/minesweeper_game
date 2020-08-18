@@ -19,7 +19,7 @@ function showHiddenValue(id, coordinates , click) {
             case '*':
                 click.number++;
                 if (click.number === 1) {
-                    _changeBombPosition(coordinates);
+                    _changeMinePosition(coordinates);
                     break;
                 }
                 _gameOver(number.id);
@@ -73,7 +73,7 @@ function showHiddenValue(id, coordinates , click) {
             if (mines_value.innerHTML === '-') {
                 mines_value.innerHTML = 0;
             }
-            _changeNumberBombsColor(++mines_value.innerHTML);
+            _changeNumberMinesColor(++mines_value.innerHTML);
             return;
         }
         _addFlag(id);
@@ -128,7 +128,7 @@ function _checkTheNeighbors(x, y, corner) {
     _checkTheNeighbors(x + 1, y - 1,true);
 }
 
-function _changeBombPosition(coordinates) {
+function _changeMinePosition(coordinates) {
     let changed = false;
     let new_position_x = 0;
     let new_position_y = 0;
@@ -170,13 +170,13 @@ function _checkRowAndSetNewValue(row, column, new_value) {
 }
 
 function _changeTheValuesOfTheNeighbors(current_cell_x, current_cell_y, new_cell_x, new_cell_y) {
-    let bomb_cell = _checkRow(current_cell_x, current_cell_y);
-    _getAllNeighbors(current_cell_x, current_cell_y, 'minus', bomb_cell);
-    _getAllNeighbors(new_cell_x, new_cell_y, 'plus', bomb_cell);
-    _changeBombCellValueAndColor (bomb_cell);
+    let mine_cell = _checkRow(current_cell_x, current_cell_y);
+    _getAllNeighbors(current_cell_x, current_cell_y, 'minus', mine_cell);
+    _getAllNeighbors(new_cell_x, new_cell_y, 'plus', mine_cell);
+    _changeMineCellValueAndColor (mine_cell);
 }
 
-function _getAllNeighbors(cell_coordinate_x, cell_coordinate_y, sign, bomb_cell) {
+function _getAllNeighbors(cell_coordinate_x, cell_coordinate_y, sign, mine_cell) {
     let all_id_numbers = [];
 
     let upper_left_diagonal_id = (cell_coordinate_x - 1) + '' + (cell_coordinate_y - 1);
@@ -203,11 +203,11 @@ function _getAllNeighbors(cell_coordinate_x, cell_coordinate_y, sign, bomb_cell)
         }
     }
     for (let key = 0; key < all_id_numbers.length; key++) {
-        _changeNeighborValue(`icon-${all_id_numbers[key]}`, sign, bomb_cell);
+        _changeNeighborValue(`icon-${all_id_numbers[key]}`, sign, mine_cell);
     }
 }
 
-function _changeBombCellValueAndColor(current_cell) {
+function _changeMineCellValueAndColor(current_cell) {
     let cell_value = document.getElementById(current_cell.id).innerHTML;
     let square_id = current_cell.id.substring(5);
     square_id.toString();
@@ -259,7 +259,7 @@ function _addFlag(id) {
     if (mines_value.innerHTML >= 0) {
         let cell = document.getElementById(id);
         cell.className = 'fa skull flag-added';
-        _changeNumberBombsColor(--mines_value.innerHTML);
+        _changeNumberMinesColor(--mines_value.innerHTML);
     }
 }
 

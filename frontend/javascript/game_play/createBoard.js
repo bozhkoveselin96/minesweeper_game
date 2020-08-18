@@ -52,7 +52,7 @@ function _takeCoordinates(id) {
     return coordinates;
 }
 
-function _showBombsInThisLevel(level) {
+function _showMinesInThisLevel(level) {
     let mines = 0;
     switch (level) {
         case 'beginner':
@@ -68,7 +68,7 @@ function _showBombsInThisLevel(level) {
     return mines;
 }
 
-function _changeNumberBombsColor(mines_value) {
+function _changeNumberMinesColor(mines_value) {
     if (mines_value <= 0) {
         document.getElementById('num-mines').innerHTML = '-';
     } else if (mines_value <= 15) {

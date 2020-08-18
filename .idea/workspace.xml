@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6122fe36-5ada-4d39-80d8-f77d5d7c2caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controller/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/BoardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
