@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minesweeper</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/minesweeper.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <script type="application/javascript" src="javascript/game_board/getData.js"></script>
+        <script type="application/javascript" src="javascript/game_play/createBoard.js"></script>
+        <script type="application/javascript" src="javascript/game_play/gameOutputs.js"></script>
+        <script type="application/javascript" src="javascript/game_play/gamePlay.js"></script>
+    </head>
+    <body>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="game-result"></h2>
+                </div>
+                <div class="modal-body">
+                    <p id="time-info">Your time: <span id="your-time"></span></p>
+                </div>
+                <div id="new-game" class="hidden">
+                    <button id="restart-game" onclick="restartGame()">NEW GAME</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="level-buttons">
+            <button id="beginner" onclick="getDataFromBackend('beginner')">BEGINNER</button>
+            <button id="intermediate" onclick="getDataFromBackend('intermediate')">INTERMEDIATE</button>
+            <button id="expert" onclick="getDataFromBackend('expert')">EXPERT</button>
+        </div>
+
+        <div id="flag-mine" class="hidden">
+            <div id="mines-square">
+                <span id="num-mines"></span>
+            </div>
+            <button id="flag-off" class="flag-off" onclick="changeFlag('on')"><i class="fa skull"></i></button>
+            <button id="flag-on" class="hidden" onclick="changeFlag('off')"><i class="fa skull"></i></button>
+            <div id="time-square">
+                <span id="time">00:00</span>
+            </div>
+        </div>
+
+        <div id="board"></div>
+        <input id="flag-status" type="hidden" value="off">
+    </body>
+</html>

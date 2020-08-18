@@ -1,11 +1,8 @@
 <?php
 
 class BoardController {
-    /** @var int $rows */
     private $rows;
-    /** @var int $columns */
     private $columns;
-    /** @var array $board */
     private $board = [];
 
     public function __construct(int $rows, int $columns) {
@@ -37,16 +34,6 @@ class BoardController {
 
     public function getBoard() {
         return $this->board;
-    }
-    public function printBoard() {
-        echo json_encode($this->board, JSON_FORCE_OBJECT);
-        echo PHP_EOL;
-        for ($row = 0; $row < $this->rows; $row++) {
-            for ($column = 0; $column < $this->columns; $column++) {
-                echo $this->board[$row][$column];
-            }
-            echo PHP_EOL;
-        }
     }
 
     private function updatingTheCellsAroundTheMines() {

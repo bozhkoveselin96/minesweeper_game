@@ -1,0 +1,136 @@
+body {
+    background-color: silver;
+}
+#board {
+    width: 550px;
+    margin: auto;
+}
+
+#level-buttons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 550px;
+    margin: auto;
+    text-align: center;
+}
+
+#flag-mine {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#new-game {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#restart-game {
+    padding: 10px;
+    font-weight: bold;
+    color: forestgreen;
+}
+
+.mask {
+    font-size: 61px;
+    color: rgba(38,40,42,0.7);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline;
+    font-size: 61px;
+    font-weight: bold;
+    padding: 11px;
+}
+
+.bomb {
+    display: inline;
+    font-size: 50px;
+    color: black;
+}
+
+.fa {
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+button .fa {
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+}
+
+.flag-off {
+    font-size: 30px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.flag-on {
+    font-size: 30px;
+    color: black;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.flag-added {
+    font-size: 50px;
+    color: black;
+}
+
+.skull:after {
+    content: '\2620';
+    padding-left: 2px;
+}
+
+#beginner {
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+#intermediate {
+    padding: 10px;
+    color: blue;
+    font-weight: bold;
+}
+
+#expert {
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+
+#mines-square, #time-square {
+    width: 80px;
+    height: 40px;
+    background-color: ghostwhite;
+    border-radius: 10%;
+}
+
+#time {
+    font-weight: bold;
+    font-size: 35px;
+    color: orange;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+#num-mines {
+    font-weight: bold;
+    font-size: 35px;
+}
+

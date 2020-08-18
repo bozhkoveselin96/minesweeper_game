@@ -23,20 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6122fe36-5ada-4d39-80d8-f77d5d7c2caf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/minesweeper_game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/controller/BoardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/defines.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/css/minesweeper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controller/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/BoardController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +77,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,6 +148,7 @@
       <workItem from="1597647563150" duration="1270000" />
       <workItem from="1597661899159" duration="5465000" />
       <workItem from="1597671906055" duration="5213000" />
+      <workItem from="1597733933663" duration="730000" />
     </task>
     <servers />
   </component>
@@ -184,6 +173,10 @@
     </state>
     <state x="-913" y="62" key="#Board.php/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1596133381149" />
     <state x="392" y="46" key="#Board.php/0.0.1366.728@0.0.1366.728" timestamp="1596055068543" />
+    <state x="337" y="22" key="#CLI_Interpreters" timestamp="1597734334683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="337" y="22" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1597734334683" />
     <state x="-1014" y="170" key="#Inspections" timestamp="1596133254832">
       <screen x="-1280" y="0" width="1280" height="984" />
     </state>
@@ -226,19 +219,20 @@
     </state>
     <state width="1237" height="305" key="GridCell.Tab.0.right/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1596133577522" />
     <state width="1237" height="305" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596307080745" />
-    <state x="258" y="12" key="SettingsEditor" timestamp="1597676214319">
+    <state x="258" y="12" key="SettingsEditor" timestamp="1597734392509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1108" y="11" key="SettingsEditor/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1596133541975" />
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595693995774" />
-    <state x="258" y="12" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597676214319" />
+    <state x="258" y="12" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597734392509" />
     <state x="-984" y="226" key="run.anything.popup" timestamp="1596133404657">
       <screen x="-1280" y="0" width="1280" height="984" />
     </state>
     <state x="-984" y="226" key="run.anything.popup/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1596133404657" />
-    <state x="-977" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1596133465169">
-      <screen x="-1280" y="0" width="1280" height="984" />
+    <state x="455" y="223" width="1008" height="717" key="search.everywhere.popup" timestamp="1597734398917">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-977" y="211" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1596133465169" />
+    <state x="455" y="223" width="1008" height="717" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597734398917" />
   </component>
 </project>
