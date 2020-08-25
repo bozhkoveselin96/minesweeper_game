@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6122fe36-5ada-4d39-80d8-f77d5d7c2caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/gameOutputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gameOutputs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +150,8 @@
       <workItem from="1597661899159" duration="5465000" />
       <workItem from="1597671906055" duration="5213000" />
       <workItem from="1597733933663" duration="730000" />
+      <workItem from="1598131281202" duration="580000" />
+      <workItem from="1598209174793" duration="6357000" />
     </task>
     <servers />
   </component>
@@ -195,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597674726659" />
-    <state x="651" y="169" key="FileChooserDialogImpl" timestamp="1597647588660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1598131865721">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596718424350" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598131865721" />
     <state x="651" y="169" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597647588660" />
     <state width="1237" height="305" key="GridCell.Tab.0.bottom" timestamp="1596307080745">
       <screen x="0" y="0" width="1366" height="728" />

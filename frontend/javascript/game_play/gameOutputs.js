@@ -57,6 +57,12 @@ function _gameOver(activated_mine_id) {
 function _checkWin() {
     let rows = 10;
     let columns = 10;
+    const bombs_in_level = {
+        'beginner' : 15,
+        'intermediate' : 25,
+        'expert' : 35
+    };
+    let counter_bombs = 0;
     for (let row = 0; row < rows; row++) {
         for (let column = 0; column < columns; column++) {
             let square_id;
@@ -66,10 +72,19 @@ function _checkWin() {
                 square_id = document.getElementById(`${row}${column}`);
             }
             let square = document.getElementById(square_id.id);
-            if (square === null || square.className === 'fa fa-square mask') {
-                return false;
+            let square_value = document.getElementById(`icon-${square_id.id}`).innerText;
+            if (square.className === 'fa skull flag-added' && square_value === '*') {
+                counter_bombs++;
             }
         }
     }
-    return true;
+
+    switch (counter_bombs) {
+        case bombs_in_level.beginner:
+        case bombs_in_level.intermediate:
+        case bombs_in_level.expert:
+            _youWin();
+            break;
+    }
+    return false;
 }
