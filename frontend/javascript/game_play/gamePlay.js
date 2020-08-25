@@ -63,9 +63,6 @@ function showHiddenValue(id, coordinates , click) {
             case '#':
                 click.number++;
         }
-        if (_checkWin()) {
-           _youWin();
-        }
     } else if (flag_status === 'on' && square_class !== 'fa') {
         if (square_class === 'fa skull flag-added') {
             document.getElementById(id).className = 'fa fa-square mask';
@@ -260,6 +257,9 @@ function _addFlag(id) {
         let cell = document.getElementById(id);
         cell.className = 'fa skull flag-added';
         _changeNumberMinesColor(--mines_value.innerHTML);
+        if (_checkWin()) {
+            _youWin();
+        }
     }
 }
 
