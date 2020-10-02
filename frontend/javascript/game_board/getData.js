@@ -4,17 +4,17 @@ function getDataFromBackend(level) {
         case 'intermediate':
         case 'expert':
             _makeRequest(level);
-            const timer_at_the_begging = 1,
+            const timerAtTheBegging = 1,
                 display = document.querySelector('#time');
-            _startTimer(timer_at_the_begging, display);
+            _startTimer(timerAtTheBegging, display);
             break;
         default:
-            console.log('error');
+            alert('error');
     }
 }
 
 function _makeRequest(level) {
-    const request_data = {level: level};
+    const requestData = { level: level };
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -27,11 +27,11 @@ function _makeRequest(level) {
             document.getElementById('flag-mine').className = 'flex';
             document.getElementById('new-game').className = '';
             document.getElementById('num-mines').innerHTML = mines;
-            let mines_value = document.getElementById('num-mines');
-            _changeNumberMinesColor(mines_value.innerHTML);
+            let minesValue = document.getElementById('num-mines');
+            _changeNumberMinesColor(minesValue.innerHTML);
         }
     };
     xmlhttp.open("POST", "http://localhost/minesweeper_game/backend/index.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/json");
-    xmlhttp.send(JSON.stringify(request_data));
+    xmlhttp.send(JSON.stringify(requestData));
 }

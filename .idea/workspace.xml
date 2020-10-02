@@ -23,7 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6122fe36-5ada-4d39-80d8-f77d5d7c2caf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controller/BoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/BoardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_board/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/createBoard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/gameOutputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gameOutputs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/javascript/game_play/gamePlay.js" afterDir="false" />
     </list>
@@ -79,6 +84,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -152,6 +158,7 @@
       <workItem from="1597733933663" duration="730000" />
       <workItem from="1598131281202" duration="580000" />
       <workItem from="1598209174793" duration="6357000" />
+      <workItem from="1601636155126" duration="1723000" />
     </task>
     <servers />
   </component>

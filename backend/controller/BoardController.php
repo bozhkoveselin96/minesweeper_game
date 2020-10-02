@@ -19,14 +19,14 @@ class BoardController {
         return $this->board;
     }
 
-    public function putMines(int $number_mines) {
-        $current_number_mines = 0;
-        while ($current_number_mines < $number_mines) {
-            $random_x_coordinate = rand(0, $this->rows - 1);
-            $random_y_coordinate = rand(0, $this->columns - 1);
-            if ($this->board[$random_x_coordinate][$random_y_coordinate] !== MINE) {
-                $this->board[$random_x_coordinate][$random_y_coordinate] = MINE;
-                $current_number_mines++;
+    public function putMines(int $numberMines) {
+        $currentNumberMines = 0;
+        while ($currentNumberMines < $numberMines) {
+            $randomCoordinateX = rand(0, $this->rows - 1);
+            $randomCoordinateY = rand(0, $this->columns - 1);
+            if ($this->board[$randomCoordinateX][$randomCoordinateY] !== MINE) {
+                $this->board[$randomCoordinateX][$randomCoordinateY] = MINE;
+                $currentNumberMines++;
             }
         }
         $this->updatingTheCellsAroundTheMines();

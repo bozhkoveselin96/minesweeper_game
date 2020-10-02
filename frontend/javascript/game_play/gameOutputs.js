@@ -1,14 +1,15 @@
 function _youWin() {
-    let your_time = document.getElementById('time').innerHTML;
+    let yourTime = document.getElementById('time').innerHTML;
     clearInterval(interval);
     document.getElementById('my-modal').style.display = 'block';
     document.getElementById('board').style.margin = '0';
     document.getElementById('flag-mine').style.margin = '0';
     document.getElementById('time-info').style.display = 'block';
-    document.getElementById('your-time').innerHTML = your_time;
+    document.getElementById('your-time').innerHTML = yourTime;
     document.getElementById('game-result').innerHTML = 'YOU WIN';
 }
-function _gameOver(activated_mine_id) {
+function _gameOver(activatedMineId) {
+    document.getElementById('time-info').style.display = 'none';
     let rows = 10;
     let columns = 10;
     let keys = [];
@@ -36,15 +37,15 @@ function _gameOver(activated_mine_id) {
                 } else {
                     cell.style.color = 'black';
                 }
-            }, 500);
+            },500);
         }
     }
-    let activated_mine = document.getElementById(activated_mine_id);
+    let activatedMine = document.getElementById(activatedMineId);
     setInterval(function () {
-        if (activated_mine.style.color === 'black') {
-            activated_mine.style.color = 'red';
+        if (activatedMine.style.color === 'black') {
+            activatedMine.style.color = 'red';
         } else {
-            activated_mine.style.color = 'black';
+            activatedMine.style.color = 'black';
         }
     }, 500);
 
@@ -57,32 +58,32 @@ function _gameOver(activated_mine_id) {
 function _checkWin() {
     let rows = 10;
     let columns = 10;
-    const bombs_in_level = {
+    const bombsInLevel = {
         'beginner' : 15,
         'intermediate' : 25,
         'expert' : 35
     };
-    let counter_bombs = 0;
+    let counterBombs = 0;
     for (let row = 0; row < rows; row++) {
         for (let column = 0; column < columns; column++) {
-            let square_id;
+            let squareId;
             if (row === 0) {
-                square_id = document.getElementById(`${column}`);
+                squareId = document.getElementById(`${column}`);
             } else {
-                square_id = document.getElementById(`${row}${column}`);
+                squareId = document.getElementById(`${row}${column}`);
             }
-            let square = document.getElementById(square_id.id);
-            let square_value = document.getElementById(`icon-${square_id.id}`).innerText;
-            if (square.className === 'fa skull flag-added' && square_value === '*') {
-                counter_bombs++;
+            let square = document.getElementById(squareId.id);
+            let squareValue = document.getElementById(`icon-${squareId.id}`).innerText;
+            if (square.className === 'fa skull flag-added' && squareValue === '*') {
+                counterBombs++;
             }
         }
     }
 
-    switch (counter_bombs) {
-        case bombs_in_level.beginner:
-        case bombs_in_level.intermediate:
-        case bombs_in_level.expert:
+    switch (counterBombs) {
+        case bombsInLevel.beginner:
+        case bombsInLevel.intermediate:
+        case bombsInLevel.expert:
             _youWin();
             break;
     }

@@ -1,26 +1,26 @@
 function _createBoardInHTML(board) {
-    let board_HTML = '';
-    board_HTML += '<table>';
+    let boardHTML = '';
+    boardHTML += '<table>';
     for (let row of board) {
-        board_HTML += '<tr>';
+        boardHTML += '<tr>';
         for (let column of row) {
-            board_HTML += '<td class="fa fa-square mask">';
-            board_HTML += '<span class="hidden">' + column + '</span>';
-            board_HTML += '</td>';
+            boardHTML += '<td class="fa fa-square mask">';
+            boardHTML += '<span class="hidden">' + column + '</span>';
+            boardHTML += '</td>';
         }
-        board_HTML += '</tr>';
+        boardHTML += '</tr>';
     }
-    board_HTML += '</table>';
-    document.getElementById('board').innerHTML = board_HTML;
-    const all_td_in_the_table = document.getElementsByTagName("td");
-    _addIdNumbers(all_td_in_the_table);
+    boardHTML += '</table>';
+    document.getElementById('board').innerHTML = boardHTML;
+    const allTdsInTheTable = document.getElementsByTagName("td");
+    _addIdNumbers(allTdsInTheTable);
 }
 
-function _addIdNumbers(tags_arr) {
-    let click = {'number' : 0};
-    for (let id = 0; id < tags_arr.length; id++) {
-        tags_arr[id].setAttribute('id', id);
-        tags_arr[id].firstChild.setAttribute('id', 'icon-' + id);
+function _addIdNumbers(tagsArr) {
+    let click = { number : 0 };
+    for (let id = 0; id < tagsArr.length; id++) {
+        tagsArr[id].setAttribute('id', id);
+        tagsArr[id].firstChild.setAttribute('id', 'icon-' + id);
         let td = document.getElementById(id.toString());
         td.addEventListener("click", function () {
             const coordinates = _takeCoordinates(id);
@@ -68,14 +68,14 @@ function _showMinesInThisLevel(level) {
     return mines;
 }
 
-function _changeNumberMinesColor(mines_value) {
-    if (mines_value <= 0) {
+function _changeNumberMinesColor(minesValue) {
+    if (minesValue <= 0) {
         document.getElementById('num-mines').innerHTML = '-';
-    } else if (mines_value <= 15) {
+    } else if (minesValue <= 15) {
         document.getElementById('num-mines').style.color = 'green';
-    } else if (mines_value <= 25 && mines_value > 15) {
+    } else if (minesValue <= 25 && minesValue > 15) {
         document.getElementById('num-mines').style.color = 'blue';
-    } else if (mines_value <= 35 && mines_value > 25) {
+    } else if (minesValue <= 35 && minesValue > 25) {
         document.getElementById('num-mines').style.color = 'red';
     }
 }
