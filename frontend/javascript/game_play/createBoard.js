@@ -56,13 +56,13 @@ function _showMinesInThisLevel(level) {
     let mines = 0;
     switch (level) {
         case 'beginner':
-            mines = 15;
+            mines = 10;
             break;
         case 'intermediate':
-            mines = 25;
+            mines = 15;
             break;
         case 'expert':
-            mines = 35;
+            mines = 20;
             break;
     }
     return mines;
@@ -71,11 +71,11 @@ function _showMinesInThisLevel(level) {
 function _changeNumberMinesColor(minesValue) {
     if (minesValue <= 0) {
         document.getElementById('num-mines').innerHTML = '-';
-    } else if (minesValue <= 15) {
+    } else if (minesValue <= 10) {
         document.getElementById('num-mines').style.color = 'green';
-    } else if (minesValue <= 25 && minesValue > 15) {
+    } else if (minesValue <= 15 && minesValue > 10) {
         document.getElementById('num-mines').style.color = 'blue';
-    } else if (minesValue <= 35 && minesValue > 25) {
+    } else if (minesValue <= 20 && minesValue > 15) {
         document.getElementById('num-mines').style.color = 'red';
     }
 }

@@ -58,11 +58,6 @@ function _gameOver(activatedMineId) {
 function _checkWin() {
     let rows = 10;
     let columns = 10;
-    const bombsInLevel = {
-        'beginner' : 15,
-        'intermediate' : 25,
-        'expert' : 35
-    };
     let counterBombs = 0;
     for (let row = 0; row < rows; row++) {
         for (let column = 0; column < columns; column++) {
@@ -80,12 +75,9 @@ function _checkWin() {
         }
     }
 
-    switch (counterBombs) {
-        case bombsInLevel.beginner:
-        case bombsInLevel.intermediate:
-        case bombsInLevel.expert:
-            _youWin();
-            break;
+    if (counterBombs === bombsInLevel) {
+        _youWin();
+        return true;
     }
     return false;
 }

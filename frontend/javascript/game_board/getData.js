@@ -1,11 +1,21 @@
+let bombsInLevel = null;
 function getDataFromBackend(level) {
+    const timerAtTheBegging = 1,
+        display = document.querySelector('#time');
     switch (level) {
         case 'beginner':
-        case 'intermediate':
-        case 'expert':
+            bombsInLevel = 10;
             _makeRequest(level);
-            const timerAtTheBegging = 1,
-                display = document.querySelector('#time');
+            _startTimer(timerAtTheBegging, display);
+            break;
+        case 'intermediate':
+            bombsInLevel = 15;
+            _makeRequest(level);
+            _startTimer(timerAtTheBegging, display);
+            break;
+        case 'expert':
+            bombsInLevel = 20;
+            _makeRequest(level);
             _startTimer(timerAtTheBegging, display);
             break;
         default:
